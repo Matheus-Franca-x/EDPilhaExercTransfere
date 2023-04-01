@@ -8,5 +8,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="lib/PilhaInt.jar"/>
+	<classpathentry kind="lib" path="lib/PilhaString.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
