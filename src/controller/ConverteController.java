@@ -6,7 +6,7 @@ import libPilhaInt.PilhaString;
 
 public class ConverteController 
 {
-//	public PilhaString pStr = new PilhaString();
+
 	
 	public ConverteController()
 	{
@@ -15,7 +15,7 @@ public class ConverteController
 	
 	public void decToBin(int valor)
 	{
-		if(valor < 1000)
+		if(valor <= 1000)
 		{
 				
 			PilhaInt pInt = new PilhaInt();
@@ -30,7 +30,7 @@ public class ConverteController
 			while(!pInt.isEmpty())
 			{
 				try {
-					met = met + pInt.pop();
+					met += pInt.pop();
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
