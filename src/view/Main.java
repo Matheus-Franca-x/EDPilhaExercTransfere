@@ -1,14 +1,19 @@
 package view;
 
-import libPilhaInt.PilhaInt;
-import libPilhaInt.PilhaString;
+import controller.ConverteController;
 
 public class Main 
 {
 	
-	PilhaString pilhaStr = new PilhaString();
-	PilhaInt pilhaInt = new PilhaInt();
-	
+	public static void main(String[] args)
+	{
+		ConverteController pilha = new ConverteController();
+		
+		pilha.decToBin(8);
+		
+		
+		
+	}
 	
 	
 	
