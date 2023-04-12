@@ -16,11 +16,12 @@ public class ConverteController
 	
 	public void decToBin(int valor)
 	{
-		int bin;
+		int bin = 0;
 		while(valor <= 0)
 		{
-			
-			pInt.push(valor);
+			bin = valor % 2;
+			pInt.push(bin);
+			valor /= 2;
 		}
 	}
 
