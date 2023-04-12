@@ -13,26 +13,35 @@ public class ConverteController
 		super();
 	}
 	
-	public void decToBin(int valor) 
+	public void decToBin(int valor)
 	{
-		PilhaInt pInt = new PilhaInt();
-		int bin = 0;
-		String met = "";
-		while(valor > 0)
+		if(valor < 1000)
 		{
-			bin = valor % 2;
-			pInt.push(bin);
-			valor /= 2;
-		}
-		while(!pInt.isEmpty())
-		{
-			try {
-				met = met + pInt.pop();
-			} catch (Exception e) {
-				e.printStackTrace();
+				
+			PilhaInt pInt = new PilhaInt();
+			int bin = 0;
+			String met = "";
+			while(valor > 0)
+			{
+				bin = valor % 2;
+				pInt.push(bin);
+				valor /= 2;
 			}
+			while(!pInt.isEmpty())
+			{
+				try {
+					met = met + pInt.pop();
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+			System.out.println(met);
 		}
-		System.out.println(met);
+		else
+		{
+			System.out.println("Apenas valor menor ou igual a 1000!");
+		}
+		
 	}
 
 }

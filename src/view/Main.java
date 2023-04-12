@@ -9,7 +9,9 @@ public class Main
 	{
 		ConverteController pilha = new ConverteController();
 		
-		pilha.decToBin(8);
+		
+		pilha.decToBin(1001);
+		
 		
 		
 		
