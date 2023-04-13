@@ -20,7 +20,7 @@ public class ConverteController
 				
 			PilhaInt pInt = new PilhaInt();
 			int bin = 0;
-			String met = "";
+			String callBin = "";
 			while(valor > 0)
 			{
 				bin = valor % 2;
@@ -30,12 +30,12 @@ public class ConverteController
 			while(!pInt.isEmpty())
 			{
 				try {
-					met += pInt.pop();
+					callBin += pInt.pop();
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
 			}
-			System.out.println(met);
+			System.out.println(callBin);
 		}
 		else
 		{
