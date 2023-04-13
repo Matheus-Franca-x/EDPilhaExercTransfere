@@ -7,9 +7,9 @@ public class Main
 	
 	public static void main(String[] args)
 	{
-		int[] vet = {14, 26, 38, 15, 5, 39, 11, 25, 22, 20, 17, 1};
+		int[] vet = {1, 17, 20, 22, 25, 11, 39, 5, 15, 38, 26, 14}; 
 		TransfereController pilha = new TransfereController();
-		pilha.maior(vet);
+		pilha.transfere(vet);
 		
 
 		

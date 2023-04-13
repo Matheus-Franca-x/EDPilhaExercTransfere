@@ -13,36 +13,54 @@ public class TransfereController
 		super();
 	}
 	
-	public void maior(int[] valor)
+	public void transfere(int[] valor)
 	{
-		PilhaInt pilha = new PilhaInt();
+		PilhaInt pilhaA = new PilhaInt();
+		PilhaInt pilhaB = new PilhaInt();
+		PilhaInt pilhaC = new PilhaInt();
 		
 		for(int array: valor)
 		{
-			pilha.push(array);
+			pilhaA.push(array);
+			
 		}
 		
-		int maior1;
-		int maior2;
-		
-		while(pilha.size() != 1)
+		while(!pilhaA.isEmpty())
 		{
 			try {
-				maior1 = pilha.pop();
-				maior2 = pilha.pop();
-				if(maior1 > maior2)
-				{
-					pilha.push(maior1);
-				}
-				else
-				{
-					pilha.push(maior2);
-				}
+				int test = pilhaA.pop();
+				pilhaB.push(test);
+				System.out.println(test);
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
-			
 		}
+		while(!pilhaB.isEmpty())
+		{
+			try {
+				pilhaC.push(pilhaB.pop());
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+		while(!pilhaC.isEmpty())
+		{
+			try {
+				pilhaA.push(pilhaC.pop());
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+		System.out.println("");
+		while(!pilhaA.isEmpty())
+		{
+			try {
+				System.out.println(pilhaA.pop());
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+		
 	}
 
 }
