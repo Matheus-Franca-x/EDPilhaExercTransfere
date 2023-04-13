@@ -4,16 +4,16 @@ import libPilhaInt.PilhaInt;
 import libPilhaInt.PilhaString;
 
 
-public class MaiorController 
+public class TransfereController 
 {
 	
 	
-	public MaiorController()
+	public TransfereController()
 	{
 		super();
 	}
 	
-	public void parEImpar(int[] valor)
+	public void maior(int[] valor)
 	{
 		PilhaInt pilha = new PilhaInt();
 		
