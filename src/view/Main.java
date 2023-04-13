@@ -1,22 +1,20 @@
 package view;
 
-import controller.ConverteController;
+import controller.ParEImparController;
 
 public class Main 
 {
 	
 	public static void main(String[] args)
 	{
-		ConverteController pilhaBin = new ConverteController();
-		pilhaBin.decToBin(8);
+		int[] vet = {14, 26, 38, 15, 5, 39, 11, 25, 22, 20, 17, 1, 26, 5};
+		ParEImparController pilha = new ParEImparController();
+		pilha.parEImpar(vet);
 		
 
 		
 		
 		
 	}
-	
-	
-	
 	
 }
